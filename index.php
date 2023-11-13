@@ -13,7 +13,18 @@ if(isset($_POST['cadastrar'])){
     $telefone = $_POST['telef'];
     $email = $_POST['mail'];
     $sexo = $_POST['sex'];
-    $query = mysqli_query($connection, "INSERT INTO alunos (ra, nome, endereco, telefone, email, sexo) VALUES ('$ra', '$nome', '$endereco', '$telefone', '$email', '$sexo')");
+    $idade = $_POST['age'];
+
+    $query = mysqli_query($connection, "INSERT INTO alunos (ra, nome, endereco, telefone, email, sexo, idade) VALUES ('$ra', '$nome', '$endereco', '$telefone', '$email', '$sexo', '$idade')");
+
+    if ($query) {
+        // Redireciona para a página de alunos.php após a inserção bem-sucedida
+        header("Location: alunos.php");
+        exit(); // Certifique-se de encerrar o script após o redirecionamento
+    } else {
+        echo 'Erro ao inserir dados no banco de dados.';
+    }
+
 }
 
 /*
@@ -72,8 +83,9 @@ if($query){
                 <option value="masculino">Masculino</option>
             </select>
             <input type="text" placeholder="Digite seu nome" id="nome" name="name">
+            <input type="number" placeholder="Digite sua idade" id="idade" name="age"> 
             <input type="number" placeholder="Digite seu RA" id="ra" name="ra_aluno">
-            <input type="text" placeholder="Digite seu endereço" id="end" name="endereco"> <!--multivalorado-->
+            <input type="text" placeholder="Digite seu endereço" id="end" name="endereco"> <!--multivalorado?-->
             <input type="number" placeholder="Digite seu telefone" id="tel" name="telef" >
             <input type="text" placeholder="Digite seu e-mail" id="email" name="mail">
                 

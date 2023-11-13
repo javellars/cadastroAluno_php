@@ -29,24 +29,25 @@ $connection = Mysqli_connect($host, $user , $senha, $database) or die ("Erro de 
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html"><i class="fa-regular fa-pen-to-square"></i> Cadastro</a></li>
-                    <li> <a href="alunoLista.html" > <i class="fa-solid fa-users"></i> Alunos</a></li>
-                    <li> <a href="referencia.html"> <i class="fa-solid fa-quote-left"></i> Referências</a></li>
+                    <li><a href="index.php"><i class="fa-regular fa-pen-to-square"></i> Cadastro</a></li>
+                    <li> <a href="alunos.php" > <i class="fa-solid fa-users"></i> Alunos</a></li>
+                    <li> <a href="referencia.php"> <i class="fa-solid fa-quote-left"></i> Referências</a></li>
                 </ul>
             </nav>
         </div>
 
        
-    </div>
+   
 
-
-    <div class="card_cadastro">
+   
+    <div class="card_cadastro_list">
 
     <table>
         <thead>
             <tr>
                 <th>RA</th>
                 <th>Nome</th>
+                <th>Idade</th>
                 <th>Endereço</th>
                 <th>Telefone</th>
                 <th>Email</th>
@@ -61,6 +62,7 @@ $connection = Mysqli_connect($host, $user , $senha, $database) or die ("Erro de 
             <tr>
                 <td><?php echo $linha['ra']; ?></td>
                 <td><?php echo $linha['nome']; ?></td>
+                <td><?php echo $linha['idade']; ?></td>
                 <td><?php echo $linha['endereco']; ?></td>
                 <td><?php echo $linha['telefone']; ?></td>
                 <td><?php echo $linha['email']; ?></td>
@@ -71,8 +73,9 @@ $connection = Mysqli_connect($host, $user , $senha, $database) or die ("Erro de 
         ?>
     </tbody>
     </table>
-
+  
     </div>    
+</div>
 <script src="move.js"></script>
 </body>
 </html>

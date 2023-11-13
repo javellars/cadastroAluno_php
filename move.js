@@ -35,12 +35,13 @@ function validarCadastro() {
     const email = document.getElementById("email").value;
     const endereco = document.getElementById("end").value;
     const sexo = document.getElementById("sex").value;
+    const idade = document.getElementById("idade").value;
 
-    if (!name || !email || !ra || !telefone || !endereco || !sexo) {
+
+    if (!name || !email || !ra || !telefone || !endereco || !sexo  || !idade) {
         alert("Por favor, preencha todos os campos.");
     } 
     else {
         alert("Cadastro bem-sucedido!");
-        window.location.href = "alunoLista.html";
     }
 }
