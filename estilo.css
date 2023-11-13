@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+
+#cont_principal{
+    display: flex;
+}
+
+#cont_principal_list{
+    display: flex;
+     justify-content: space-between;
+}
+/*Configs do menu lateral*/
+.menuLateral {
+    width: 300px;
+    height: 100vh;
+    background-color: RoyalBlue;
+    padding: 10px;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 0px 5px #444;
+  
+}
+
+.menuLateral.visible {
+    background-color: rgba(135,206,250, 0.3);
+    color: RoyalBlue;
+}
+
+
+.menuLateral.visible a:hover {
+    background-color: #fff;
+}
+
+.menuLateral.visible a {
+    padding: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px; /* Ajuste o espaçamento conforme necessário */
+    display: block;
+    color: RoyalBlue;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.menuLateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ícone do menu */
+.menu-toggle {
+    cursor: pointer;
+    text-align: center;
+    padding-left: 200px;
+}
+
+/*Começa o formulário de cadastro*/
+
+.card_cadastro{
+    background-color: rgba(135,206,250, 0.3);
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 5px #333;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card_cadastro input[type="text"],
+.card_cadastro input[type="number"]{
+    text-align: justify;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    margin: 15px;
+    border-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+select{
+    text-align: justify;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border-style: none; 
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.titulo{
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+button{
+    width: 40%;
+    font-size: 12px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(65,105,225, 0.8)	;
+    border-style: none;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+ }
+
+/*Estilização da segunda página (lista dos alunos)*/
+table {
+    border-style: dashed;
+    border-color: red;
+    border-spacing: 0px;
+    margin-left: 50px; /* Adicione essa margem para separar a tabela do menu lateral */
+}
+
+table td, th {
+    border-style: dashed;
+    border-color: red;
+    padding: 5px;
+}
