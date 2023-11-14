@@ -12,6 +12,8 @@
 }
 
 
+
+
 /*Configs do menu lateral*/
 .menuLateral {
     width: 300px;
@@ -98,6 +100,7 @@
 }
 
 
+
 .card_cadastro input[type="text"],
 .card_cadastro input[type="number"]{
     text-align: justify;
@@ -140,14 +143,12 @@ button{
  }
 
 /*Estilização da segunda página (lista dos alunos)*/
-/* Estilização da tabela */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Estilo das células de cabeçalho */
 th {
     background-color: #3498db;
     color: #fff;
@@ -155,18 +156,42 @@ th {
     text-align: left;
 }
 
-/* Estilo das células de dados */
 td {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-/* Estilo das linhas pares (alterne as cores) */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Estilo de destaque ao passar o mouse sobre as linhas */
 tr:hover {
     background-color: #d4e6f1;
+}
+
+/*estilo de referência*/
+
+.card_cadastro_ref {
+    background-color: rgba(220, 220, 220, 0.2);
+    width: 800px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #333;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card_cadastro_ref table {
+    width: 100%;
+}
+
+.card_cadastro_ref td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card_cadastro_ref td:last-child {
+    border-bottom: none;
 }

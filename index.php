@@ -66,7 +66,7 @@ if($query){
                     <ul>
                         <li><a href="index.php"><i class="fa-regular fa-pen-to-square"></i> Cadastro</a></li>
                         <li> <a href="alunos.php" > <i class="fa-solid fa-users"></i> Alunos</a></li>
-                        <li> <a href="referencia.html"> <i class="fa-solid fa-quote-left"></i> Referências</a></li>
+                        <li> <a href="referencia.php"> <i class="fa-solid fa-quote-left"></i> Referências</a></li>
                     </ul>
                 </nav>
             </div>
