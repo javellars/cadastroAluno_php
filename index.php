@@ -18,9 +18,8 @@ if(isset($_POST['cadastrar'])){
     $query = mysqli_query($connection, "INSERT INTO alunos (ra, nome, endereco, telefone, email, sexo, idade) VALUES ('$ra', '$nome', '$endereco', '$telefone', '$email', '$sexo', '$idade')");
 
     if ($query) {
-        // Redireciona para a página de alunos.php após a inserção bem-sucedida
         header("Location: alunos.php");
-        exit(); // Certifique-se de encerrar o script após o redirecionamento
+        exit(); 
     } else {
         echo 'Erro ao inserir dados no banco de dados.';
     }
@@ -34,6 +33,9 @@ if($query){
     echo 'eita tristeza infinita';
 }
 */
+
+
+
 
 ?>
 

@@ -2,6 +2,7 @@
 
 #cont_principal{
     display: flex;
+
 }
 
 #cont_principal_list{
@@ -14,7 +15,7 @@
 /*Configs do menu lateral*/
 .menuLateral {
     width: 300px;
-    height: 100vh;
+    height: 110vh;
     background-color: RoyalBlue;
     padding: 10px;
     color: #fff;
@@ -35,7 +36,7 @@
 }
 
 .menuLateral.visible a {
-    padding: 100px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
@@ -58,6 +59,10 @@
     text-align: center;
     padding-left: 200px;
 }
+
+/**/
+
+
 
 /*Começa o formulário de cadastro*/
 

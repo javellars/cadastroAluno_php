@@ -6,6 +6,8 @@ $database = "sistema";
 
 $connection = Mysqli_connect($host, $user , $senha, $database) or die ("Erro de conexão!");
 
+$resultado = mysqli_query($connection, "SELECT * FROM alunos ORDER BY ra");
+
 ?>
 
 <!DOCTYPE html>
