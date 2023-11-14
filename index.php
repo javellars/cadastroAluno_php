@@ -85,10 +85,10 @@ if($query){
                 <option value="masculino">Masculino</option>
             </select>
             <input type="text" placeholder="Digite seu nome" id="nome" name="name">
-            <input type="number" placeholder="Digite sua idade" id="idade" name="age"> 
-            <input type="number" placeholder="Digite seu RA" id="ra" name="ra_aluno">
-            <input type="text" placeholder="Digite seu endereço" id="end" name="endereco"> <!--multivalorado?-->
-            <input type="number" placeholder="Digite seu telefone" id="tel" name="telef" >
+            <input type="number" placeholder="Digite sua idade" id="idade" name="age" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2"> 
+            <input type="number" placeholder="Digite seu RA" id="ra" name="ra_aluno" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4">
+            <input type="text" placeholder="Digite seu endereço (Rua)" id="end" name="endereco"> <!--multivalorado?-->
+            <input type="number" placeholder="Digite seu telefone"  id="tel" name="telef" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11"> 
             <input type="text" placeholder="Digite seu e-mail" id="email" name="mail">
                 
             <button onclick="validarCadastro()" name="cadastrar">Cadastrar</button>

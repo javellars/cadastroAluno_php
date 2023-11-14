@@ -6,7 +6,6 @@ $database = "sistema";
 
 $connection = Mysqli_connect($host, $user , $senha, $database) or die ("Erro de conexão!");
 
-$resultado = mysqli_query($connection, "SELECT * FROM alunos ORDER BY ra");
 
 ?>
 
@@ -58,7 +57,7 @@ $resultado = mysqli_query($connection, "SELECT * FROM alunos ORDER BY ra");
         </thead>
     <tbody>
         <?php
-        $resultado = mysqli_query($connection, "SELECT * FROM alunos");
+        $resultado = mysqli_query($connection, "SELECT * FROM alunos ORDER BY ra");
         while ($linha = mysqli_fetch_array($resultado)) {
             ?>
             <tr>
